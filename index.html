@@ -1,0 +1,185 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ISL Connect</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🤟 ISL Connect</div>
+        <div class="tagline">
+            Indian Sign Language • Multimodal Communication
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h1>Break the Communication Barrier</h1>
+
+            <p>
+                Translate Indian Sign Language into text and speech,
+                and convert spoken language into text.
+            </p>
+        </section>
+
+
+        <section class="translator">
+
+            <!-- SIGN LANGUAGE SIDE -->
+
+            <div class="card">
+
+                <h2>🤟 Sign Language</h2>
+
+                <p class="description">
+                    Show your sign in front of the camera.
+                </p>
+
+                <div class="camera-container">
+
+                    <video id="camera" autoplay playsinline></video>
+
+                    <div id="cameraMessage">
+                        Camera is off
+                    </div>
+
+                </div>
+
+                <div class="buttons">
+
+                    <button id="startCamera">
+                        📷 Start Camera
+                    </button>
+
+                    <button id="stopCamera">
+                        ⛔ Stop Camera
+                    </button>
+
+                </div>
+
+                <div class="result">
+
+                    <h3>Detected Sign</h3>
+
+                    <div id="signResult">
+                        Waiting for sign...
+                    </div>
+
+                </div>
+
+                <button id="speakResult" class="speakButton">
+                    🔊 Speak Result
+                </button>
+
+            </div>
+
+
+            <!-- SPEECH SIDE -->
+
+            <div class="card">
+
+                <h2>🎤 Voice Communication</h2>
+
+                <p class="description">
+                    Speak normally and convert your speech into text.
+                </p>
+
+                <div class="voice-box">
+
+                    <div id="micIcon">
+                        🎤
+                    </div>
+
+                    <p id="voiceStatus">
+                        Microphone is ready
+                    </p>
+
+                </div>
+
+                <button id="startListening" class="listenButton">
+                    🎤 Start Listening
+                </button>
+
+                <div class="result">
+
+                    <h3>Recognized Speech</h3>
+
+                    <div id="speechResult">
+                        Your speech will appear here...
+                    </div>
+
+                </div>
+
+                <button id="clearSpeech" class="clearButton">
+                    Clear
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONVERSATION -->
+
+        <section class="conversation">
+
+            <h2>💬 Conversation</h2>
+
+            <div id="conversationBox">
+
+                <div class="empty">
+                    Conversation will appear here.
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FEATURES -->
+
+        <section class="features">
+
+            <div>
+                <span>🤟</span>
+                <h3>ISL Recognition</h3>
+                <p>Recognize selected Indian Sign Language gestures.</p>
+            </div>
+
+            <div>
+                <span>🎤</span>
+                <h3>Speech Recognition</h3>
+                <p>Convert spoken communication into text.</p>
+            </div>
+
+            <div>
+                <span>🔊</span>
+                <h3>Text to Speech</h3>
+                <p>Convert recognized signs into spoken audio.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            ISL Connect | Hackathon Prototype
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
